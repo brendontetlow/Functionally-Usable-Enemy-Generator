@@ -1,0 +1,995 @@
+[gd_scene load_steps=16 format=3 uid="uid://c817mpn5bljr"]
+
+[ext_resource type="Script" uid="uid://crl8qqj6ngyml" path="res://master.gd" id="1_1hb0s"]
+[ext_resource type="FontFile" uid="uid://ccqtmwj246cfa" path="res://FunnelSans-VariableFont_wght.ttf" id="2_61ncg"]
+[ext_resource type="Texture2D" uid="uid://mpwh7j5xwmp3" path="res://knights-medieval-castle.jpg" id="2_f5mch"]
+[ext_resource type="Texture2D" uid="uid://b2q3vcipcp8ou" path="res://Powered by Fabula Ultima Logo.png" id="3_vwyxc"]
+
+[sub_resource type="Gradient" id="Gradient_hoe3c"]
+colors = PackedColorArray(0.438334, 0.718136, 0.430517, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_6k2wc"]
+gradient = SubResource("Gradient_hoe3c")
+fill_from = Vector2(1, 0.391304)
+fill_to = Vector2(0, 0.4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6k2wc"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f5mch"]
+bg_color = Color(0.552941, 0.552941, 0.552941, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hdb4l"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hoe3c"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Theme" id="Theme_vwyxc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rvs7w"]
+bg_color = Color(0, 0, 0, 0.352941)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_agc2m"]
+bg_color = Color(0, 0, 0, 0.537255)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p4l10"]
+bg_color = Color(0, 0.71019, 0.476675, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cwptm"]
+bg_color = Color(0.0406673, 0.67026, 0.784416, 1)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_1hb0s")
+
+[node name="Knights-medieval-castle" type="Sprite2D" parent="."]
+position = Vector2(560, 320)
+scale = Vector2(0.2412, 0.2412)
+texture = ExtResource("2_f5mch")
+
+[node name="ColorRect5" type="ColorRect" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0.760784)
+offset_left = -5.0
+offset_top = -3.0
+offset_right = 1154.0
+offset_bottom = 651.0
+
+[node name="Generator" type="CanvasGroup" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Generator"]
+modulate = Color(1, 1, 1, 0.760784)
+offset_left = 32.0
+offset_top = 34.0
+offset_right = 381.0
+offset_bottom = 568.0
+
+[node name="ColorRect3" type="ColorRect" parent="Generator"]
+modulate = Color(1, 1, 1, 0.760784)
+offset_left = 32.0
+offset_top = 34.0
+offset_right = 381.0
+offset_bottom = 61.0
+color = Color(0.411873, 0.67178, 0.528346, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="Generator"]
+modulate = Color(1, 1, 1, 0.760784)
+offset_left = 357.0
+offset_top = 34.0
+offset_right = 381.0
+offset_bottom = 568.0
+color = Color(0.411873, 0.67178, 0.528346, 1)
+
+[node name="ColorRect2" type="TextureRect" parent="Generator"]
+modulate = Color(1, 1, 1, 0.223529)
+offset_left = 33.0
+offset_top = 33.0
+offset_right = 380.0
+offset_bottom = 568.0
+texture = SubResource("GradientTexture2D_6k2wc")
+
+[node name="Button" type="Button" parent="Generator"]
+offset_left = 65.0
+offset_top = 190.0
+offset_right = 160.0
+offset_bottom = 225.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6k2wc")
+text = "Generate"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Generator"]
+offset_left = 121.0
+offset_top = 528.0
+offset_right = 303.0
+offset_bottom = 564.0
+
+[node name="CopyEnemy1" type="Button" parent="Generator/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6k2wc")
+text = "Enemy 1 >>"
+
+[node name="CopyEnemy2" type="Button" parent="Generator/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6k2wc")
+text = "Enemy 2 >>"
+
+[node name="LevelPicker" type="OptionButton" parent="Generator"]
+offset_left = 114.0
+offset_top = 79.0
+offset_right = 189.0
+offset_bottom = 109.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+theme_override_styles/focus = SubResource("StyleBoxFlat_f5mch")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_f5mch")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_f5mch")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_f5mch")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_f5mch")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_f5mch")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f5mch")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_f5mch")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_f5mch")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_f5mch")
+theme_override_styles/normal = SubResource("StyleBoxFlat_f5mch")
+
+[node name="Label" type="Label" parent="Generator/LevelPicker"]
+layout_mode = 0
+offset_left = -46.0
+offset_top = 4.0
+offset_right = -1.0
+offset_bottom = 27.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Level:"
+
+[node name="Rank" type="OptionButton" parent="Generator"]
+offset_left = 115.0
+offset_top = 121.0
+offset_right = 215.0
+offset_bottom = 151.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+theme_override_styles/focus = SubResource("StyleBoxFlat_hdb4l")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_hdb4l")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_hdb4l")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_hdb4l")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_hdb4l")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_hdb4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hdb4l")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_hdb4l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hdb4l")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_hdb4l")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hdb4l")
+item_count = 3
+popup/item_0/text = "Soldier"
+popup/item_0/id = 0
+popup/item_1/text = "Elite"
+popup/item_1/id = 1
+popup/item_2/text = "Champion"
+popup/item_2/id = 2
+
+[node name="Label" type="Label" parent="Generator/Rank"]
+layout_mode = 0
+offset_left = -45.0
+offset_top = 6.0
+offset_bottom = 29.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Rank:"
+
+[node name="Rank2" type="OptionButton" parent="Generator"]
+visible = false
+offset_left = 289.0
+offset_top = 75.0
+offset_right = 347.0
+offset_bottom = 104.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+theme_override_styles/focus = SubResource("StyleBoxFlat_hoe3c")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_hoe3c")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_hoe3c")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_hoe3c")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_hoe3c")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_hoe3c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hoe3c")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_hoe3c")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hoe3c")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_hoe3c")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hoe3c")
+
+[node name="Label" type="Label" parent="Generator/Rank2"]
+layout_mode = 0
+offset_left = -82.0
+offset_top = -5.0
+offset_right = -4.0
+offset_bottom = 38.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Champion 
+Multiplier:"
+
+[node name="Stats" type="VBoxContainer" parent="Generator"]
+offset_left = 54.0
+offset_top = 245.0
+offset_right = 163.0
+offset_bottom = 539.0
+
+[node name="Difficulty Level" type="Label" parent="Generator/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Difficulty Level"
+
+[node name="Name" type="Label" parent="Generator/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Name: [WIP]"
+
+[node name="Level" type="Label" parent="Generator/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Level"
+
+[node name="Type" type="Label" parent="Generator/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Type"
+
+[node name="HP" type="Label" parent="Generator/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "HP"
+
+[node name="MP" type="Label" parent="Generator/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "MP"
+
+[node name="DEF" type="Label" parent="Generator/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "DEF"
+
+[node name="DEX" type="Label" parent="Generator/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "DEX"
+
+[node name="INS" type="Label" parent="Generator/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "INS"
+
+[node name="MIG" type="Label" parent="Generator/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "MIG"
+
+[node name="WLP" type="Label" parent="Generator/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "WLP"
+
+[node name="Affinities" type="VBoxContainer" parent="Generator"]
+offset_left = 194.0
+offset_top = 290.0
+offset_right = 342.0
+offset_bottom = 535.0
+
+[node name="Vulnerabilities" type="Label" parent="Generator/Affinities"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Vulnerability"
+
+[node name="Resistances" type="Label" parent="Generator/Affinities"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Resistance"
+
+[node name="Immunity" type="Label" parent="Generator/Affinities"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Immunity"
+
+[node name="Absorb" type="Label" parent="Generator/Affinities"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Asborption"
+
+[node name="PoweredByFabulaUltimaLogo" type="TextureButton" parent="Generator"]
+offset_left = 1097.0
+offset_top = 587.0
+offset_right = 1373.0
+offset_bottom = 882.0
+scale = Vector2(0.206522, 0.206522)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("3_vwyxc")
+texture_pressed = ExtResource("3_vwyxc")
+texture_hover = ExtResource("3_vwyxc")
+texture_disabled = ExtResource("3_vwyxc")
+texture_focused = ExtResource("3_vwyxc")
+
+[node name="CheckButton" type="CheckButton" parent="Generator"]
+visible = false
+offset_left = 188.0
+offset_top = 164.0
+offset_right = 232.0
+offset_bottom = 188.0
+
+[node name="Show_HideAff" type="Label" parent="Generator/CheckButton"]
+offset_left = 44.0
+offset_top = -8.0
+offset_right = 170.0
+offset_bottom = 35.0
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Show/Hide 
+Damage Affinities"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_left = 388.0
+offset_top = 36.0
+offset_right = 428.0
+offset_bottom = 76.0
+
+[node name="Enemy 1" type="CanvasGroup" parent="HBoxContainer"]
+visible = false
+position = Vector2(-26, -35)
+
+[node name="ColorRect" type="ColorRect" parent="HBoxContainer/Enemy 1"]
+modulate = Color(1, 1, 1, 0.760784)
+offset_left = 32.0
+offset_top = 34.0
+offset_right = 381.0
+offset_bottom = 568.0
+
+[node name="ColorRect3" type="ColorRect" parent="HBoxContainer/Enemy 1"]
+modulate = Color(1, 1, 1, 0.760784)
+offset_left = 32.0
+offset_top = 34.0
+offset_right = 381.0
+offset_bottom = 61.0
+color = Color(0.411873, 0.67178, 0.528346, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="HBoxContainer/Enemy 1"]
+modulate = Color(1, 1, 1, 0.760784)
+offset_left = 357.0
+offset_top = 34.0
+offset_right = 381.0
+offset_bottom = 568.0
+color = Color(0.411873, 0.67178, 0.528346, 1)
+
+[node name="ColorRect2" type="TextureRect" parent="HBoxContainer/Enemy 1"]
+modulate = Color(1, 1, 1, 0.223529)
+offset_left = 32.0
+offset_top = 34.0
+offset_right = 379.0
+offset_bottom = 569.0
+texture = SubResource("GradientTexture2D_6k2wc")
+
+[node name="e1dmgField" type="LineEdit" parent="HBoxContainer/Enemy 1"]
+offset_left = 44.0
+offset_top = 182.0
+offset_right = 114.0
+offset_bottom = 219.0
+theme_override_colors/clear_button_color_pressed = Color(0, 0, 0, 1)
+theme_override_colors/clear_button_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+theme_override_font_sizes/font_size = 11
+theme_override_styles/focus = SubResource("StyleBoxFlat_rvs7w")
+theme_override_styles/read_only = SubResource("StyleBoxFlat_rvs7w")
+theme_override_styles/normal = SubResource("StyleBoxFlat_rvs7w")
+placeholder_text = "DMG"
+alignment = 1
+
+[node name="e1dmgButton" type="Button" parent="HBoxContainer/Enemy 1"]
+offset_left = 113.0
+offset_top = 182.0
+offset_right = 208.0
+offset_bottom = 219.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6k2wc")
+text = "Damage"
+
+[node name="HP" type="ProgressBar" parent="HBoxContainer/Enemy 1"]
+offset_left = 98.0
+offset_top = 64.0
+offset_right = 351.0
+offset_bottom = 81.0
+theme_override_styles/background = SubResource("StyleBoxFlat_agc2m")
+theme_override_styles/fill = SubResource("StyleBoxFlat_p4l10")
+show_percentage = false
+
+[node name="HP" type="Label" parent="HBoxContainer/Enemy 1/HP"]
+offset_left = -28.0
+offset_top = -1.0
+offset_right = -6.0
+offset_bottom = 19.0
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "HP"
+
+[node name="MP" type="ProgressBar" parent="HBoxContainer/Enemy 1"]
+offset_left = 40.0
+offset_top = 87.0
+offset_right = 293.0
+offset_bottom = 104.0
+theme_override_styles/background = SubResource("StyleBoxFlat_agc2m")
+theme_override_styles/fill = SubResource("StyleBoxFlat_cwptm")
+show_percentage = false
+
+[node name="MP" type="Label" parent="HBoxContainer/Enemy 1/MP"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.5
+offset_left = 264.0
+offset_top = -2.0
+offset_right = 286.0
+offset_bottom = 18.0
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "MP"
+
+[node name="Stats" type="VBoxContainer" parent="HBoxContainer/Enemy 1"]
+offset_left = 54.0
+offset_top = 245.0
+offset_right = 163.0
+offset_bottom = 539.0
+
+[node name="Difficulty Level" type="Label" parent="HBoxContainer/Enemy 1/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Difficulty Level"
+
+[node name="Name" type="Label" parent="HBoxContainer/Enemy 1/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Name: [WIP]"
+
+[node name="Level" type="Label" parent="HBoxContainer/Enemy 1/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Level"
+
+[node name="Type" type="Label" parent="HBoxContainer/Enemy 1/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Type"
+
+[node name="HP" type="Label" parent="HBoxContainer/Enemy 1/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "HP"
+
+[node name="MP" type="Label" parent="HBoxContainer/Enemy 1/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "MP"
+
+[node name="DEF" type="Label" parent="HBoxContainer/Enemy 1/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "DEF"
+
+[node name="DEX" type="Label" parent="HBoxContainer/Enemy 1/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "DEX"
+
+[node name="INS" type="Label" parent="HBoxContainer/Enemy 1/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "INS"
+
+[node name="MIG" type="Label" parent="HBoxContainer/Enemy 1/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "MIG"
+
+[node name="WLP" type="Label" parent="HBoxContainer/Enemy 1/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "WLP"
+
+[node name="Affinities" type="VBoxContainer" parent="HBoxContainer/Enemy 1"]
+offset_left = 194.0
+offset_top = 290.0
+offset_right = 342.0
+offset_bottom = 535.0
+
+[node name="Vulnerabilities" type="Label" parent="HBoxContainer/Enemy 1/Affinities"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Vulnerability"
+
+[node name="Resistances" type="Label" parent="HBoxContainer/Enemy 1/Affinities"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Resistance"
+
+[node name="Immunity" type="Label" parent="HBoxContainer/Enemy 1/Affinities"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Immunity"
+
+[node name="Absorb" type="Label" parent="HBoxContainer/Enemy 1/Affinities"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Asborption"
+
+[node name="e1clear" type="Button" parent="HBoxContainer/Enemy 1"]
+offset_left = 356.0
+offset_top = 36.0
+offset_right = 380.0
+offset_bottom = 58.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6k2wc")
+text = "x"
+
+[node name="Enemy 2" type="CanvasGroup" parent="HBoxContainer"]
+visible = false
+position = Vector2(338, -34)
+
+[node name="ColorRect" type="ColorRect" parent="HBoxContainer/Enemy 2"]
+modulate = Color(1, 1, 1, 0.760784)
+offset_left = 32.0
+offset_top = 34.0
+offset_right = 381.0
+offset_bottom = 568.0
+
+[node name="ColorRect3" type="ColorRect" parent="HBoxContainer/Enemy 2"]
+modulate = Color(1, 1, 1, 0.760784)
+offset_left = 32.0
+offset_top = 34.0
+offset_right = 381.0
+offset_bottom = 61.0
+color = Color(0.411873, 0.67178, 0.528346, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="HBoxContainer/Enemy 2"]
+modulate = Color(1, 1, 1, 0.760784)
+offset_left = 357.0
+offset_top = 34.0
+offset_right = 381.0
+offset_bottom = 568.0
+color = Color(0.411873, 0.67178, 0.528346, 1)
+
+[node name="ColorRect2" type="TextureRect" parent="HBoxContainer/Enemy 2"]
+modulate = Color(1, 1, 1, 0.223529)
+offset_left = 33.0
+offset_top = 33.0
+offset_right = 380.0
+offset_bottom = 568.0
+texture = SubResource("GradientTexture2D_6k2wc")
+
+[node name="Stats" type="VBoxContainer" parent="HBoxContainer/Enemy 2"]
+offset_left = 54.0
+offset_top = 245.0
+offset_right = 163.0
+offset_bottom = 539.0
+
+[node name="Difficulty Level" type="Label" parent="HBoxContainer/Enemy 2/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Difficulty Level"
+
+[node name="Name" type="Label" parent="HBoxContainer/Enemy 2/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Name: [WIP]"
+
+[node name="Level" type="Label" parent="HBoxContainer/Enemy 2/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Level"
+
+[node name="Type" type="Label" parent="HBoxContainer/Enemy 2/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Type"
+
+[node name="HP" type="Label" parent="HBoxContainer/Enemy 2/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "HP"
+
+[node name="MP" type="Label" parent="HBoxContainer/Enemy 2/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "MP"
+
+[node name="DEF" type="Label" parent="HBoxContainer/Enemy 2/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "DEF"
+
+[node name="DEX" type="Label" parent="HBoxContainer/Enemy 2/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "DEX"
+
+[node name="INS" type="Label" parent="HBoxContainer/Enemy 2/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "INS"
+
+[node name="MIG" type="Label" parent="HBoxContainer/Enemy 2/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "MIG"
+
+[node name="WLP" type="Label" parent="HBoxContainer/Enemy 2/Stats"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "WLP"
+
+[node name="Affinities" type="VBoxContainer" parent="HBoxContainer/Enemy 2"]
+offset_left = 194.0
+offset_top = 290.0
+offset_right = 342.0
+offset_bottom = 535.0
+
+[node name="Vulnerabilities" type="Label" parent="HBoxContainer/Enemy 2/Affinities"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Vulnerability"
+
+[node name="Resistances" type="Label" parent="HBoxContainer/Enemy 2/Affinities"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Resistance"
+
+[node name="Immunity" type="Label" parent="HBoxContainer/Enemy 2/Affinities"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Immunity"
+
+[node name="Absorb" type="Label" parent="HBoxContainer/Enemy 2/Affinities"]
+layout_mode = 2
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "Asborption"
+
+[node name="HP" type="ProgressBar" parent="HBoxContainer/Enemy 2"]
+offset_left = 98.0
+offset_top = 64.0
+offset_right = 351.0
+offset_bottom = 81.0
+theme_override_styles/background = SubResource("StyleBoxFlat_agc2m")
+theme_override_styles/fill = SubResource("StyleBoxFlat_p4l10")
+show_percentage = false
+
+[node name="HP" type="Label" parent="HBoxContainer/Enemy 2/HP"]
+offset_left = -28.0
+offset_top = -1.0
+offset_right = -6.0
+offset_bottom = 19.0
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "HP"
+
+[node name="MP" type="ProgressBar" parent="HBoxContainer/Enemy 2"]
+offset_left = 40.0
+offset_top = 87.0
+offset_right = 293.0
+offset_bottom = 104.0
+theme_override_styles/background = SubResource("StyleBoxFlat_agc2m")
+theme_override_styles/fill = SubResource("StyleBoxFlat_cwptm")
+show_percentage = false
+
+[node name="MP" type="Label" parent="HBoxContainer/Enemy 2/MP"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.5
+offset_left = 264.0
+offset_top = -2.0
+offset_right = 286.0
+offset_bottom = 18.0
+theme = SubResource("Theme_vwyxc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+text = "MP"
+
+[node name="e2dmgField" type="LineEdit" parent="HBoxContainer/Enemy 2"]
+offset_left = 44.0
+offset_top = 182.0
+offset_right = 114.0
+offset_bottom = 219.0
+theme_override_colors/clear_button_color_pressed = Color(0, 0, 0, 1)
+theme_override_colors/clear_button_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+theme_override_font_sizes/font_size = 11
+theme_override_styles/focus = SubResource("StyleBoxFlat_rvs7w")
+theme_override_styles/read_only = SubResource("StyleBoxFlat_rvs7w")
+theme_override_styles/normal = SubResource("StyleBoxFlat_rvs7w")
+placeholder_text = "DMG"
+alignment = 1
+
+[node name="e2dmgButton" type="Button" parent="HBoxContainer/Enemy 2"]
+offset_left = 113.0
+offset_top = 182.0
+offset_right = 208.0
+offset_bottom = 219.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6k2wc")
+text = "Damage"
+
+[node name="e2clear" type="Button" parent="HBoxContainer/Enemy 2"]
+offset_left = 356.0
+offset_top = 36.0
+offset_right = 380.0
+offset_bottom = 58.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_61ncg")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6k2wc")
+text = "x"
+
+[connection signal="pressed" from="Generator/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Generator/HBoxContainer/CopyEnemy1" to="." method="_on_copy_enemy_1_pressed"]
+[connection signal="pressed" from="Generator/HBoxContainer/CopyEnemy2" to="." method="_on_copy_enemy_2_pressed"]
+[connection signal="item_selected" from="Generator/Rank" to="." method="_on_rank_item_selected"]
+[connection signal="item_selected" from="Generator/Rank2" to="." method="_on_rank_2_item_selected"]
+[connection signal="pressed" from="Generator/PoweredByFabulaUltimaLogo" to="." method="_on_powered_by_fabula_ultima_logo_pressed"]
+[connection signal="toggled" from="Generator/CheckButton" to="." method="_on_check_button_toggled"]
+[connection signal="pressed" from="HBoxContainer/Enemy 1/e1dmgButton" to="." method="_on_e_1_dmg_pressed"]
+[connection signal="pressed" from="HBoxContainer/Enemy 1/e1clear" to="." method="_on_e_1_clear_pressed"]
+[connection signal="pressed" from="HBoxContainer/Enemy 2/e2dmgButton" to="." method="_on_e_2_dmg_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/Enemy 2/e2clear" to="." method="_on_e_2_clear_pressed"]
